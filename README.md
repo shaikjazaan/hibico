@@ -108,21 +108,80 @@
 <body class="font-sans antialiased overflow-x-hidden selection:bg-brand-primary selection:text-white">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-40 bg-white/90 backdrop-blur-md border-b border-brand-petalLight transition-all duration-300">
+    <nav class="fixed w-full z-40 bg-white/95 backdrop-blur-md border-b border-brand-petalLight transition-all duration-300 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <div class="flex-shrink-0 flex items-center cursor-pointer group">
-                    <img src="WhatsApp Image 2026-09-23 at 12.37.07 PM.jpeg" alt="HIBICO Logo" class="h-14 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300">
-                </div>
+                <a href="#" class="flex-shrink-0 flex items-center cursor-pointer group py-2" title="HIBICO - Nature in Every Sip">
+                    <!-- Inline High-Precision Vector Logo matching IMG_1630.PNG -->
+                    <div class="flex items-center">
+                        <svg viewBox="0 0 280 82" class="h-12 sm:h-13 w-auto transform group-hover:scale-105 transition-transform duration-300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="hibicoRed" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#D91E42"/>
+                                    <stop offset="100%" stop-color="#BA1232"/>
+                                </linearGradient>
+                                <linearGradient id="hibicoLeaf" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#73B04E"/>
+                                    <stop offset="100%" stop-color="#4E8130"/>
+                                </linearGradient>
+                                <linearGradient id="petalLight" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#FA4D7B"/>
+                                    <stop offset="100%" stop-color="#D0193B"/>
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Letters HIBIC -->
+                            <text x="4" y="50" font-family="'Inter', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="52" fill="url(#hibicoRed)" letter-spacing="1.5">HIBIC</text>
+                            
+                            <!-- Letter O -->
+                            <text x="176" y="50" font-family="'Inter', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="52" fill="url(#hibicoRed)">O</text>
+
+                            <!-- Fresh leaf on letter B -->
+                            <g transform="translate(75, 23) rotate(-18)">
+                                <path d="M 0 28 C -7 18, -4 6, 12 0 C 22 10, 18 24, 0 28 Z" fill="url(#hibicoLeaf)"/>
+                                <path d="M 0 28 C 4 19, 8 10, 12 0" stroke="#9CE26B" stroke-width="1.2" stroke-linecap="round"/>
+                                <path d="M 3 20 Q 8 18 10 14" stroke="#9CE26B" stroke-width="0.8" stroke-linecap="round" opacity="0.8"/>
+                                <path d="M 2 14 Q -2 12 -4 8" stroke="#9CE26B" stroke-width="0.8" stroke-linecap="round" opacity="0.8"/>
+                            </g>
+
+                            <!-- Blooming Hibiscus flower on the letter O -->
+                            <g transform="translate(210, 12)">
+                                <path d="M 6 24 C 10 14, 22 12, 28 18 C 30 24, 24 30, 12 28 Z" fill="url(#petalLight)" opacity="0.95"/>
+                                <path d="M 8 28 C 16 26, 32 30, 30 40 C 24 45, 14 38, 8 32 Z" fill="#D0193B"/>
+                                <path d="M 4 33 C 8 40, 18 46, 22 42 C 24 36, 16 32, 6 30 Z" fill="#B3122F"/>
+                                <path d="M 5 26 C 12 20, 20 22, 24 26 C 18 31, 10 31, 5 26 Z" fill="#FF5E89" opacity="0.9"/>
+                                <!-- Pistil & Pollen -->
+                                <path d="M 8 25 Q 18 20 27 12" stroke="#D0193B" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="27" cy="12" r="2.4" fill="#F59E0B"/>
+                                <circle cx="24" cy="9" r="1.8" fill="#FBBF24"/>
+                                <circle cx="29" cy="16" r="1.8" fill="#F59E0B"/>
+                                <circle cx="21" cy="14" r="1.5" fill="#FBBF24"/>
+                            </g>
+
+                            <!-- Tagline: — NATURE IN EVERY SIP — -->
+                            <g transform="translate(0, 71)">
+                                <line x1="8" y1="-3" x2="48" y2="-3" stroke="#659E44" stroke-width="2.2" stroke-linecap="round"/>
+                                <text x="124" y="0" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#659E44" letter-spacing="3.2">NATURE IN EVERY SIP</text>
+                                <line x1="200" y1="-3" x2="240" y2="-3" stroke="#659E44" stroke-width="2.2" stroke-linecap="round"/>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
                 
-                <div class="hidden md:flex space-x-10 items-center">
-                    <a href="#shop" class="text-brand-textDark hover:text-brand-primary transition-colors text-sm font-bold uppercase tracking-widest">Shop Powder</a>
-                    <a href="#benefits" class="text-brand-textDark hover:text-brand-primary transition-colors text-sm font-bold uppercase tracking-widest">Benefits</a>
-                    <a href="#brew-guide" class="text-brand-textDark hover:text-brand-primary transition-colors text-sm font-bold uppercase tracking-widest">How to Use</a>
-                    <a href="#ai-mixologist" class="text-brand-petal hover:text-brand-primary transition-colors text-sm font-bold uppercase tracking-widest flex items-center gap-2"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Recipe</a>
+                <div class="hidden lg:flex space-x-8 items-center">
+                    <a href="#shop" class="text-brand-textDark hover:text-brand-primary transition-colors text-xs font-bold uppercase tracking-widest">Shop</a>
+                    <a href="#about" class="text-brand-textDark hover:text-brand-primary transition-colors text-xs font-bold uppercase tracking-widest">Transparency</a>
+                    <a href="#benefits" class="text-brand-textDark hover:text-brand-primary transition-colors text-xs font-bold uppercase tracking-widest">Benefits</a>
+                    <a href="#brew-guide" class="text-brand-textDark hover:text-brand-primary transition-colors text-xs font-bold uppercase tracking-widest">How to Brew</a>
+                    <a href="#reviews" class="text-brand-textDark hover:text-brand-primary transition-colors text-xs font-bold uppercase tracking-widest">Reviews</a>
+                    <a href="#reels" class="text-brand-textDark hover:text-brand-primary transition-colors text-xs font-bold uppercase tracking-widest flex items-center gap-1.5"><i class="fa-brands fa-instagram text-brand-primary"></i> Reels</a>
+                    <a href="#ai-mixologist" class="text-brand-primary bg-brand-petalLight/60 px-3 py-1.5 rounded-full hover:bg-brand-primary hover:text-white transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-1.5"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Recipe</a>
                 </div>
 
-                <div class="flex items-center">
+                <div class="flex items-center space-x-3">
+                    <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="hidden sm:flex text-brand-textDark hover:text-brand-primary transition-colors p-2 text-lg" title="Follow @drinkhibico on Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
                     <button onclick="toggleCart()" class="text-brand-textDark hover:text-brand-primary transition-colors relative group p-2">
                         <i class="fa-solid fa-bag-shopping text-xl"></i>
                         <span id="nav-cart-count" class="absolute top-0 right-0 bg-brand-primary text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform">0</span>
@@ -310,6 +369,84 @@
             </div>
         </section>
 
+        <!-- About Us & Radical Transparency Section -->
+        <section id="about" class="py-24 bg-brand-stone relative border-t border-brand-petalLight overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <div class="inline-flex items-center px-4 py-1.5 bg-white border border-brand-petalLight text-brand-leaf text-xs font-bold tracking-widest uppercase mb-4 rounded-full shadow-sm">
+                        <i class="fa-solid fa-shield-halved mr-2 text-brand-leaf"></i> Pure Transparency
+                    </div>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-black uppercase tracking-tight text-brand-textDark">
+                        The Story Behind HIBICO
+                    </h2>
+                    <div class="w-20 h-1 bg-brand-primary mx-auto my-5"></div>
+                    <p class="text-brand-textMuted text-base sm:text-lg font-medium leading-relaxed">
+                        We started HIBICO with a simple principle: what you see is what you drink. No chemical coloring, no synthetic flavor masking, and no endless steeping of whole flowers that get tossed out.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Column 1: Sourcing -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-full bg-brand-petalLight text-brand-primary flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-earth-asia"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl uppercase tracking-wide text-brand-textDark mb-3">Single-Origin Calyces</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed mb-4">
+                            Our *Hibiscus sabdariffa* (Rosella) flowers are responsibly sourced directly from dedicated organic farm clusters in India. Each harvest is hand-picked at peak bloom, retaining the deepest anthocyanin ruby hue.
+                        </p>
+                        <span class="text-xs font-bold text-brand-leaf uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-check"></i> Pesticide-Free Harvest
+                        </span>
+                    </div>
+
+                    <!-- Column 2: Micro-Milling -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-full bg-brand-petalLight text-brand-leaf flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-mortar-pestle"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl uppercase tracking-wide text-brand-textDark mb-3">Sub-Zero Micro-Milling</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed mb-4">
+                            High heat during standard processing destroys delicate vitamin C and polyphenols. We micro-mill whole calyces under controlled low temperatures so that 100% of the fiber, bio-flavonoids, and natural tang dissolve instantly in cold or hot water.
+                        </p>
+                        <span class="text-xs font-bold text-brand-leaf uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-check"></i> Zero Bag Waste
+                        </span>
+                    </div>
+
+                    <!-- Column 3: Honest Formulation -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 rounded-full bg-brand-petalLight text-brand-petal flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl uppercase tracking-wide text-brand-textDark mb-3">Clean Label Only</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed mb-4">
+                            Each 2g pre-portioned sachet contains pure hibiscus calyx powder, balanced with subtle plant-based stevia and natural citric acid for instant crisp freshness. Zero added white sugar, zero preservatives, and no artificial red dyes.
+                        </p>
+                        <span class="text-xs font-bold text-brand-leaf uppercase tracking-wider flex items-center gap-1.5">
+                            <i class="fa-solid fa-check"></i> 100% Vegan & Lab Tested
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Transparency Banner -->
+                <div class="bg-white border-2 border-brand-petalLight p-8 sm:p-10 rounded-sm flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+                    <div class="flex items-center space-x-5">
+                        <div class="w-16 h-16 bg-brand-petalLight rounded-full flex items-center justify-center flex-shrink-0 text-brand-primary text-2xl">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-xl text-brand-textDark">Our Promise of Transparency</h4>
+                            <p class="text-brand-textMuted text-sm mt-1">Every batch is tested for purity, microbial safety, and heavy metals. What goes on the label is strictly what is inside.</p>
+                        </div>
+                    </div>
+                    <a href="#shop" class="whitespace-nowrap px-6 py-3.5 bg-brand-textDark text-white hover:bg-brand-primary transition-colors text-xs font-bold uppercase tracking-widest rounded-sm">
+                        Experience The Purity
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Interactive Benefits Section -->
         <section id="benefits" class="py-24 bg-brand-primary text-white relative border-y border-brand-primaryHover">
             <div class="absolute inset-0 pattern-botanical opacity-20 filter invert"></div>
@@ -478,6 +615,357 @@
             </div>
         </section>
 
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-24 bg-brand-stone relative border-t border-brand-petalLight">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="inline-flex items-center px-4 py-1.5 bg-white border border-brand-petalLight text-brand-primary text-xs font-bold tracking-widest uppercase mb-4 rounded-full shadow-sm">
+                        <i class="fa-solid fa-heart mr-2 text-brand-primary"></i> Real Stories
+                    </div>
+                    <h2 class="text-4xl sm:text-5xl font-serif font-black uppercase tracking-tight text-brand-textDark">
+                        Loved Across India
+                    </h2>
+                    <div class="w-20 h-1 bg-brand-primary mx-auto my-5"></div>
+                    <p class="text-brand-textMuted text-base sm:text-lg font-medium">
+                        Hear from people who made HIBICO part of their daily hydration and morning ritual.
+                    </p>
+                    
+                    <!-- Review Aggregate summary -->
+                    <div class="mt-6 flex items-center justify-center gap-3">
+                        <div class="flex text-amber-500 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="font-bold text-brand-textDark text-sm">4.8 / 5.0</span>
+                        <span class="text-brand-textMuted text-xs font-semibold">(Verified Indian Purchasers)</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[10px] font-bold text-brand-leaf bg-brand-leaf/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[9px]"></i> Verified
+                                </span>
+                            </div>
+                            <h4 class="font-serif font-bold text-brand-textDark text-base mb-2 leading-snug">"My post-workout ritual in the Bengaluru heat"</h4>
+                            <p class="text-brand-textMuted text-sm leading-relaxed mb-6 font-medium">
+                                "I usually mix one sachet straight into 150ml of chilled water with three ice cubes right after my morning run. It is tart, crisp, and leaves no weird aftertaste. Best part? No boiling or waiting for tea leaves to steep."
+                            </p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-brand-petalLight">
+                            <div class="w-10 h-10 rounded-full bg-brand-petalLight flex items-center justify-center font-bold text-brand-primary text-sm font-serif">
+                                AD
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-brand-textDark uppercase tracking-wider">Ananya Deshmukh</h5>
+                                <p class="text-[11px] text-brand-textMuted">Bengaluru, Karnataka</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[10px] font-bold text-brand-leaf bg-brand-leaf/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[9px]"></i> Verified
+                                </span>
+                            </div>
+                            <h4 class="font-serif font-bold text-brand-textDark text-base mb-2 leading-snug">"Replaced our 5 PM cutting chai"</h4>
+                            <p class="text-brand-textMuted text-sm leading-relaxed mb-6 font-medium">
+                                "My mother and I used to have milky sugary chai twice a day. We swapped the evening cup for warm HIBICO. It feels soothing on the throat and doesn't mess with our sleep cycle at night. Clean taste and genuine ruby color."
+                            </p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-brand-petalLight">
+                            <div class="w-10 h-10 rounded-full bg-brand-petalLight flex items-center justify-center font-bold text-brand-primary text-sm font-serif">
+                                RS
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-brand-textDark uppercase tracking-wider">Ritika Sen</h5>
+                                <p class="text-[11px] text-brand-textMuted">Kolkata, West Bengal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[10px] font-bold text-brand-leaf bg-brand-leaf/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[9px]"></i> Verified
+                                </span>
+                            </div>
+                            <h4 class="font-serif font-bold text-brand-textDark text-base mb-2 leading-snug">"Keep a pack at my office desk"</h4>
+                            <p class="text-brand-textMuted text-sm leading-relaxed mb-6 font-medium">
+                                "Convenience is a 10/10. I keep sachets in my laptop bag. Just rip one open into the company water tumbler, shake, and I get cold roselle juice in 5 seconds. Great natural sour-sweet kick without soda."
+                            </p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-brand-petalLight">
+                            <div class="w-10 h-10 rounded-full bg-brand-petalLight flex items-center justify-center font-bold text-brand-primary text-sm font-serif">
+                                AM
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-brand-textDark uppercase tracking-wider">Arjun Mehra</h5>
+                                <p class="text-[11px] text-brand-textMuted">Gurugram, Haryana</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[10px] font-bold text-brand-leaf bg-brand-leaf/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[9px]"></i> Verified
+                                </span>
+                            </div>
+                            <h4 class="font-serif font-bold text-brand-textDark text-base mb-2 leading-snug">"Natural tang without excess sweetness"</h4>
+                            <p class="text-brand-textMuted text-sm leading-relaxed mb-6 font-medium">
+                                "Was worried it would taste like overly sweet artificial syrup, but it's very balanced. You genuinely get the earthy floral tang of hibiscus. Added a squeeze of lemon and fresh mint yesterday—phenomenal."
+                            </p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-brand-petalLight">
+                            <div class="w-10 h-10 rounded-full bg-brand-petalLight flex items-center justify-center font-bold text-brand-primary text-sm font-serif">
+                                PK
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-brand-textDark uppercase tracking-wider">Pooja Kulkarni</h5>
+                                <p class="text-[11px] text-brand-textMuted">Pune, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[10px] font-bold text-brand-leaf bg-brand-leaf/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[9px]"></i> Verified
+                                </span>
+                            </div>
+                            <h4 class="font-serif font-bold text-brand-textDark text-base mb-2 leading-snug">"Micro-milling actually works"</h4>
+                            <p class="text-brand-textMuted text-sm leading-relaxed mb-6 font-medium">
+                                "I have used dried hibiscus flowers for years from local ayurvedic stores, but straining them was always messy. Micro-milled powder dissolves smoothly without grit. Very impressed by the sourcing."
+                            </p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-brand-petalLight">
+                            <div class="w-10 h-10 rounded-full bg-brand-petalLight flex items-center justify-center font-bold text-brand-primary text-sm font-serif">
+                                VI
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-brand-textDark uppercase tracking-wider">Vikram Iyer</h5>
+                                <p class="text-[11px] text-brand-textMuted">Chennai, Tamil Nadu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="bg-white p-8 rounded-sm border border-brand-petalLight shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <div class="flex text-amber-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[10px] font-bold text-brand-leaf bg-brand-leaf/10 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i class="fa-solid fa-circle-check text-[9px]"></i> Verified
+                                </span>
+                            </div>
+                            <h4 class="font-serif font-bold text-brand-textDark text-base mb-2 leading-snug">"Pink latte with warm oat milk is heaven"</h4>
+                            <p class="text-brand-textMuted text-sm leading-relaxed mb-6 font-medium">
+                                "Tried the warm latte brew recipe on their guide using oat milk. It froths up with this lovely pastel magenta tone and smells divine. Highly recommended for chilly mornings or cozy evenings."
+                            </p>
+                        </div>
+                        <div class="flex items-center space-x-3 pt-4 border-t border-brand-petalLight">
+                            <div class="w-10 h-10 rounded-full bg-brand-petalLight flex items-center justify-center font-bold text-brand-primary text-sm font-serif">
+                                SN
+                            </div>
+                            <div>
+                                <h5 class="text-xs font-bold text-brand-textDark uppercase tracking-wider">Shweta Nambiar</h5>
+                                <p class="text-[11px] text-brand-textMuted">Kochi, Kerala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Reels Section -->
+        <section id="reels" class="py-24 bg-white relative border-t border-brand-petalLight">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div>
+                        <div class="inline-flex items-center px-4 py-1.5 bg-brand-petalLight text-brand-primary text-xs font-bold tracking-widest uppercase mb-4 rounded-full">
+                            <i class="fa-brands fa-instagram mr-2 text-base"></i> @drinkhibico
+                        </div>
+                        <h2 class="text-4xl sm:text-5xl font-serif font-black uppercase tracking-tight text-brand-textDark">
+                            Watch Us Brew On Reels
+                        </h2>
+                        <p class="text-brand-textMuted text-base font-medium mt-3 max-w-xl">
+                            Catch 30-second pour-overs, iced coolers, behind-the-scenes milling, and customer recipes straight from our Instagram.
+                        </p>
+                    </div>
+
+                    <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold text-xs uppercase tracking-widest rounded-sm hover:opacity-95 shadow-md transition-all self-start md:self-auto">
+                        <i class="fa-brands fa-instagram text-base"></i>
+                        <span>Follow @drinkhibico</span>
+                    </a>
+                </div>
+
+                <!-- Reels Grid (Interactive Cards that open Reels) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Reel 1 -->
+                    <div class="group relative rounded-lg overflow-hidden bg-brand-stone border border-brand-petalLight shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[9/16] overflow-hidden bg-brand-textDark">
+                            <img src="https://placehold.co/720x1280/D0193B/FFFFFF?text=60s+Iced+Tea+Pour" alt="Iced Hibiscus Tea Reel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
+                            
+                            <!-- Reel Overlay Gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            
+                            <!-- Top Tag -->
+                            <div class="absolute top-4 left-4 right-4 flex justify-between items-center text-white">
+                                <span class="bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                                    <i class="fa-solid fa-play text-[9px]"></i> Reel
+                                </span>
+                                <span class="text-xs bg-black/30 backdrop-blur-md p-1.5 rounded-full"><i class="fa-solid fa-volume-high"></i></span>
+                            </div>
+
+                            <!-- Play Button Trigger -->
+                            <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center" title="Watch on Instagram">
+                                <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center text-white text-xl transform group-hover:scale-110 transition-transform shadow-lg">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </a>
+
+                            <!-- Bottom Reel Meta -->
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <p class="text-xs font-semibold leading-snug line-clamp-2 mb-2">
+                                    Watch the ruby red explosion: 1 sachet + ice + cold water in 10 seconds 🧊🌺
+                                </p>
+                                <span class="text-[11px] text-brand-petalLight font-bold uppercase tracking-wider">@drinkhibico</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 2 -->
+                    <div class="group relative rounded-lg overflow-hidden bg-brand-stone border border-brand-petalLight shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[9/16] overflow-hidden bg-brand-textDark">
+                            <img src="https://placehold.co/720x1280/E42C5B/FFFFFF?text=Frothed+Pink+Latte" alt="Warm Pink Latte Reel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            
+                            <div class="absolute top-4 left-4 right-4 flex justify-between items-center text-white">
+                                <span class="bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                                    <i class="fa-solid fa-play text-[9px]"></i> Reel
+                                </span>
+                                <span class="text-xs bg-black/30 backdrop-blur-md p-1.5 rounded-full"><i class="fa-solid fa-volume-high"></i></span>
+                            </div>
+
+                            <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center" title="Watch on Instagram">
+                                <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center text-white text-xl transform group-hover:scale-110 transition-transform shadow-lg">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </a>
+
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <p class="text-xs font-semibold leading-snug line-clamp-2 mb-2">
+                                    Velvety morning pink latte with warm oat milk froth. The cozy ritual ☕✨
+                                </p>
+                                <span class="text-[11px] text-brand-petalLight font-bold uppercase tracking-wider">@drinkhibico</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 3 -->
+                    <div class="group relative rounded-lg overflow-hidden bg-brand-stone border border-brand-petalLight shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[9/16] overflow-hidden bg-brand-textDark">
+                            <img src="https://placehold.co/720x1280/659E44/FFFFFF?text=From+Farm+To+Powder" alt="Sourcing & Milling Reel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            
+                            <div class="absolute top-4 left-4 right-4 flex justify-between items-center text-white">
+                                <span class="bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                                    <i class="fa-solid fa-play text-[9px]"></i> Reel
+                                </span>
+                                <span class="text-xs bg-black/30 backdrop-blur-md p-1.5 rounded-full"><i class="fa-solid fa-volume-high"></i></span>
+                            </div>
+
+                            <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center" title="Watch on Instagram">
+                                <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center text-white text-xl transform group-hover:scale-110 transition-transform shadow-lg">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </a>
+
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <p class="text-xs font-semibold leading-snug line-clamp-2 mb-2">
+                                    Why micro-milling? Unpacking the nutrition behind whole hibiscus calyces 🌱
+                                </p>
+                                <span class="text-[11px] text-brand-petalLight font-bold uppercase tracking-wider">@drinkhibico</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reel 4 -->
+                    <div class="group relative rounded-lg overflow-hidden bg-brand-stone border border-brand-petalLight shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="relative aspect-[9/16] overflow-hidden bg-brand-textDark">
+                            <img src="https://placehold.co/720x1280/1F2937/FFFFFF?text=Desk+Setup+Pack" alt="Customer Desk Setup Reel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                            
+                            <div class="absolute top-4 left-4 right-4 flex justify-between items-center text-white">
+                                <span class="bg-black/40 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+                                    <i class="fa-solid fa-play text-[9px]"></i> Reel
+                                </span>
+                                <span class="text-xs bg-black/30 backdrop-blur-md p-1.5 rounded-full"><i class="fa-solid fa-volume-high"></i></span>
+                            </div>
+
+                            <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="absolute inset-0 flex items-center justify-center" title="Watch on Instagram">
+                                <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md border border-white/50 flex items-center justify-center text-white text-xl transform group-hover:scale-110 transition-transform shadow-lg">
+                                    <i class="fa-solid fa-play ml-1"></i>
+                                </div>
+                            </a>
+
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <p class="text-xs font-semibold leading-snug line-clamp-2 mb-2">
+                                    How our community takes HIBICO on work trips & flights across India ✈️💼
+                                </p>
+                                <span class="text-[11px] text-brand-petalLight font-bold uppercase tracking-wider">@drinkhibico</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Instagram CTA Note -->
+                <div class="mt-12 text-center">
+                    <p class="text-xs font-bold uppercase tracking-widest text-brand-textMuted">
+                        Tag <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="text-brand-primary hover:underline">@drinkhibico</a> with your creations to get featured on our feed!
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- AI Mixologist Section -->
         <section id="ai-mixologist" class="py-24 bg-brand-petalLight/30 text-brand-textDark relative border-t border-brand-petalLight">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -514,13 +1002,55 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                 
                 <div class="md:col-span-2">
-                    <img src="WhatsApp Image 2026-09-23 at 12.37.07 PM.jpeg" alt="HIBICO Logo" class="h-12 w-auto object-contain mb-6 filter brightness-0 invert">
+                    <div class="inline-block bg-white p-3 rounded-lg mb-6 shadow-sm">
+                        <svg viewBox="0 0 280 82" class="h-11 w-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="hibicoRedFooter" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#D91E42"/>
+                                    <stop offset="100%" stop-color="#BA1232"/>
+                                </linearGradient>
+                                <linearGradient id="hibicoLeafFooter" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#73B04E"/>
+                                    <stop offset="100%" stop-color="#4E8130"/>
+                                </linearGradient>
+                                <linearGradient id="petalLightFooter" x1="0" y1="0" x2="1" y2="1">
+                                    <stop offset="0%" stop-color="#FA4D7B"/>
+                                    <stop offset="100%" stop-color="#D0193B"/>
+                                </linearGradient>
+                            </defs>
+
+                            <text x="4" y="50" font-family="'Inter', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="52" fill="url(#hibicoRedFooter)" letter-spacing="1.5">HIBIC</text>
+                            <text x="176" y="50" font-family="'Inter', 'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="52" fill="url(#hibicoRedFooter)">O</text>
+
+                            <!-- Leaf on B -->
+                            <g transform="translate(75, 23) rotate(-18)">
+                                <path d="M 0 28 C -7 18, -4 6, 12 0 C 22 10, 18 24, 0 28 Z" fill="url(#hibicoLeafFooter)"/>
+                                <path d="M 0 28 C 4 19, 8 10, 12 0" stroke="#9CE26B" stroke-width="1.2" stroke-linecap="round"/>
+                            </g>
+
+                            <!-- Flower on O -->
+                            <g transform="translate(210, 12)">
+                                <path d="M 6 24 C 10 14, 22 12, 28 18 C 30 24, 24 30, 12 28 Z" fill="url(#petalLightFooter)" opacity="0.95"/>
+                                <path d="M 8 28 C 16 26, 32 30, 30 40 C 24 45, 14 38, 8 32 Z" fill="#D0193B"/>
+                                <path d="M 4 33 C 8 40, 18 46, 22 42 C 24 36, 16 32, 6 30 Z" fill="#B3122F"/>
+                                <path d="M 8 25 Q 18 20 27 12" stroke="#D0193B" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="27" cy="12" r="2.4" fill="#F59E0B"/>
+                                <circle cx="24" cy="9" r="1.8" fill="#FBBF24"/>
+                            </g>
+
+                            <!-- Slogan -->
+                            <g transform="translate(0, 71)">
+                                <line x1="8" y1="-3" x2="48" y2="-3" stroke="#659E44" stroke-width="2.2" stroke-linecap="round"/>
+                                <text x="124" y="0" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#659E44" letter-spacing="3.2">NATURE IN EVERY SIP</text>
+                                <line x1="200" y1="-3" x2="240" y2="-3" stroke="#659E44" stroke-width="2.2" stroke-linecap="round"/>
+                            </g>
+                        </svg>
+                    </div>
                     <p class="text-gray-400 text-sm font-medium leading-relaxed max-w-sm mb-6">
-                        Revolutionizing ancient botanicals through micro-milling technology. Pure, instant, and unapologetically bold.
+                        100% pure hibiscus calyces micro-milled for instant hot teas, crisp iced teas, and refreshing chilled juices. Nature in every sip.
                     </p>
                     <div class="flex space-x-5">
-                        <a href="https://www.instagram.com/drinkhibico?stkn=c2czZXIybnh2ZWxp" target="_blank" rel="noopener noreferrer" class="w-10 h-10 border border-brand-stone/20 rounded-full flex items-center justify-center hover:bg-brand-primary hover:border-brand-primary transition-colors"><i class="fa-brands fa-instagram text-brand-stone"></i></a>
-                        <a href="#" class="w-10 h-10 border border-brand-stone/20 rounded-full flex items-center justify-center hover:bg-brand-primary hover:border-brand-primary transition-colors"><i class="fa-brands fa-tiktok text-brand-stone"></i></a>
+                        <a href="https://www.instagram.com/drinkhibico" target="_blank" rel="noopener noreferrer" class="w-10 h-10 border border-brand-stone/20 rounded-full flex items-center justify-center hover:bg-brand-primary hover:border-brand-primary transition-colors" title="Follow @drinkhibico on Instagram"><i class="fa-brands fa-instagram text-brand-stone"></i></a>
                     </div>
                 </div>
 
@@ -528,8 +1058,10 @@
                     <h4 class="font-bold text-brand-petalLight uppercase tracking-widest text-xs mb-6">Explore</h4>
                     <ul class="space-y-4">
                         <li><a href="#shop" class="text-gray-400 hover:text-white transition-colors text-xs uppercase font-bold tracking-wide">Shop Powders</a></li>
-                        <li><a href="#benefits" class="text-gray-400 hover:text-white transition-colors text-xs uppercase font-bold tracking-wide">Why Powder?</a></li>
-                        <li><a href="#brew-guide" class="text-gray-400 hover:text-white transition-colors text-xs uppercase font-bold tracking-wide">How to Use</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors text-xs uppercase font-bold tracking-wide">Pure Transparency</a></li>
+                        <li><a href="#brew-guide" class="text-gray-400 hover:text-white transition-colors text-xs uppercase font-bold tracking-wide">Brew Guide</a></li>
+                        <li><a href="#reviews" class="text-gray-400 hover:text-white transition-colors text-xs uppercase font-bold tracking-wide">Reviews</a></li>
+                        <li><a href="#reels" class="text-gray-400 hover:text-white transition-colors text-xs uppercase font-bold tracking-wide">Instagram Reels</a></li>
                     </ul>
                 </div>
 
@@ -707,8 +1239,10 @@
             });
             
             const activeBtn = document.getElementById(`btn-${tabId}`);
-            activeBtn.classList.remove('bg-brand-stone', 'text-brand-textMuted', 'border-brand-petalLight');
-            activeBtn.classList.add('bg-brand-textDark', 'text-white', 'shadow-md');
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-brand-stone', 'text-brand-textMuted', 'border-brand-petalLight');
+                activeBtn.classList.add('bg-brand-textDark', 'text-white', 'shadow-md');
+            }
             
             const contents = document.querySelectorAll('.tab-content');
             contents.forEach(content => {
@@ -717,8 +1251,10 @@
             });
             
             const activeContent = document.getElementById(`content-${tabId}`);
-            activeContent.classList.remove('hidden');
-            activeContent.classList.add('flex');
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+                activeContent.classList.add('flex');
+            }
         }
 
         // --- AI Mixologist Logic (Gemini API) ---
@@ -755,11 +1291,11 @@
             
             // Set loading state
             btn.disabled = true;
-            btnText.textContent = "Foraging for your recipe...";
+            btnText.textContent = "Brewing your recipe...";
             btnIcon.className = "fa-solid fa-circle-notch fa-spin text-xl";
             resultContainer.classList.add('hidden', 'opacity-0', 'translate-y-4');
 
-            const systemPrompt = "You are a master botanical mixologist for 'HIBICO', an earthy, natural brand of instant hibiscus tea. Create a unique, delicious beverage recipe (mocktail, latte, iced tea, or smoothie) using the ingredients the user provides, PLUS always include '1 Sachet (2g) HIBICO Powder'. Keep in mind that 1 sachet is designed for 120ml of liquid. Note that the HIBICO sachet already contains stevia (sweetener), maltodextrin, and citric acid, so warn the user not to add too much extra sweetness or acidity. Format the output as JSON matching the schema exactly. Ensure the tone is earthy, organic, and sophisticated.";
+            const systemPrompt = "You are a beverage specialist for 'HIBICO', a pure natural brand of instant micro-milled hibiscus tea in India. Create a simple, healthy recipe strictly categorized as either Warm Hibiscus Tea, Crisp Iced Tea, or Chilled Hibiscus Juice Cooler using the ingredients the user provides. DO NOT suggest mocktails, alcohol, cocktails, or coffee drinks. Always include '1 Sachet (2g) HIBICO Powder' and 120ml to 150ml of liquid. Mention that HIBICO already has a natural stevia touch and citric brightness so no excessive sugar or acid is needed. Format the output as JSON matching the schema.";
             const userQuery = `Ingredients I have: ${input}`;
             const apiKey = ""; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
@@ -772,12 +1308,13 @@
                     responseSchema: {
                         type: "OBJECT",
                         properties: {
-                            "recipeName": { type: "STRING", description: "Creative, earthy name for the drink" },
+                            "recipeName": { type: "STRING", description: "Simple, refreshing Indian tea or juice name" },
+                            "category": { type: "STRING", description: "Hot Tea, Iced Tea, or Chilled Juice" },
                             "description": { type: "STRING", description: "A short, appetizing 1-sentence description" },
                             "ingredients": { type: "ARRAY", items: { type: "STRING" }, description: "List of ingredients including measurements" },
                             "instructions": { type: "ARRAY", items: { type: "STRING" }, description: "Step-by-step instructions" }
                         },
-                        required: ["recipeName", "description", "ingredients", "instructions"]
+                        required: ["recipeName", "category", "description", "ingredients", "instructions"]
                     }
                 }
             };
@@ -803,7 +1340,7 @@
                 showToast("Failed to forge recipe. Please try again.");
             } finally {
                 btn.disabled = false;
-                btnText.textContent = "Craft My Elixir";
+                btnText.textContent = "Craft My Tea / Juice Recipe";
                 btnIcon.className = "fa-solid fa-wand-magic-sparkles group-hover:rotate-12 transition-transform";
             }
         }
@@ -820,25 +1357,26 @@
             
             const instructionsHTML = recipe.instructions.map((inst, idx) => `
                 <li class="mb-5">
-                    <span class="text-brand-primary font-bold text-[10px] uppercase tracking-widest block mb-1">Phase 0${idx + 1}</span>
+                    <span class="text-brand-primary font-bold text-[10px] uppercase tracking-widest block mb-1">Step 0${idx + 1}</span>
                     <span class="text-brand-textDark/80 font-medium leading-relaxed">${inst}</span>
                 </li>
             `).join('');
 
             container.innerHTML = `
                 <div class="text-center mb-10">
+                    <span class="inline-block px-3 py-1 bg-brand-petalLight text-brand-primary text-[10px] font-bold uppercase tracking-widest rounded-full mb-3">${recipe.category || 'HIBICO Recipe'}</span>
                     <h3 class="text-3xl font-serif font-black text-brand-textDark uppercase mb-3">${recipe.recipeName}</h3>
                     <p class="text-brand-primary italic font-serif text-lg">"${recipe.description}"</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
                     <div class="bg-brand-stone p-8 border border-brand-petalLight rounded-sm shadow-inner">
-                        <h4 class="font-bold uppercase tracking-widest text-sm mb-6 border-b border-brand-petalLight pb-3 text-brand-primary">Botanicals Required</h4>
+                        <h4 class="font-bold uppercase tracking-widest text-sm mb-6 border-b border-brand-petalLight pb-3 text-brand-primary">Ingredients Required</h4>
                         <ul class="space-y-4">
                             ${ingredientsHTML}
                         </ul>
                     </div>
                     <div class="bg-white p-8 border border-brand-petalLight rounded-sm shadow-sm">
-                        <h4 class="font-bold uppercase tracking-widest text-sm mb-6 border-b border-brand-petalLight pb-3 text-brand-textDark">The Ritual</h4>
+                        <h4 class="font-bold uppercase tracking-widest text-sm mb-6 border-b border-brand-petalLight pb-3 text-brand-textDark">Preparation Steps</h4>
                         <ul class="">
                             ${instructionsHTML}
                         </ul>
@@ -861,5 +1399,5 @@
             container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
     </script>
-    </body>
+</body>
 </html>
