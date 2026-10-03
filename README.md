@@ -1400,3 +1400,16 @@
     </script>
 </body>
 </html>
+<!-- Navigation Bar Logo -->
+<a href="#" class="flex-shrink-0 flex items-center cursor-pointer group py-2">
+    <img 
+        src="logo.png" 
+        alt="HIBICO - Nature in Every Sip" 
+        class="h-12 sm:h-14 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300"
+    >
+</a>
+<!-- Footer Logo -->
+<img 
+    src="logo.png" 
+    alt="HIBICO Logo" 
+    class="h-12 w-auto object-contain mb-6 filter brightness-0 invert"
